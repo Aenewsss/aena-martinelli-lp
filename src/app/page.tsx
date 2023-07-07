@@ -1,10 +1,13 @@
 import Navbar from "@/components/Navbar"
+import Top from "@/components/Top"
 
 export default function Home() {
   return (
     <main >
-      <Navbar />
-      <h1>DESPERTE O POTENCIAL DO SEU NEGÓCIO</h1>
+      <div className="bg-top">
+        <Navbar />
+        <Top />
+      </div>
     </main>
   )
 }

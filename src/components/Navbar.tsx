@@ -1,6 +1,6 @@
 const Navbar = () => {
     return (
-        <div className="navbar d-flex align-center justify-between">
+        <div className="container d-flex align-center justify-between">
             <img src="/images/logo-aena.svg" alt="Aenã Martinelli logo" />
 
             <div className="d-flex gap-1">
