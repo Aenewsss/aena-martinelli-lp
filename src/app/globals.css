@@ -4,6 +4,7 @@
   --green: #4CD5B6;
   --mw-1360: 1360px;
   --mw-992: 992px;
+  --bg-navbar: rgba(0,0,0,0.6)
 }
 
 * {
@@ -176,7 +177,7 @@ button {
 }
 
 .cta-title {
-  line-height: 2.2em;
+  line-height: 2.8em;
 }
 
 .cta-title-1 {
@@ -225,12 +226,50 @@ button {
   background-image: url("/images/background-top.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
 
+.justify-center{
+  justify-content: center !important;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .navbar {
+    margin-right: 2em;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .img-top {
+    display: none;
+  }
+
+  .top-section {
+    justify-content: center !important;
+  }
+
+  .navbar {
+    justify-content: center !important;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    background-color: var(--bg-navbar);
+    margin-right: unset;
+    padding: 1.2em 0.6em;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .bg-glass {
+    width: 100%;
   }
 }
 

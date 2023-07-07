@@ -1,9 +1,9 @@
 const Navbar = () => {
     return (
-        <div className="container d-flex align-center justify-between">
+        <div className="container d-flex align-center justify-between navbar gap-2">
             <img src="/images/logo-aena.svg" alt="Aenã Martinelli logo" />
 
-            <div className="d-flex gap-1">
+            <div className="d-flex gap-1 justify-center">
                 <a href="#" className="text-green fs-24 nav-link nav-important">Quero saber mais!</a>
                 <a href="#" className="nav-link">Projetos</a>
                 <a href="#" className="nav-link">Sobre mim</a>

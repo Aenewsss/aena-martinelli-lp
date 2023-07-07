@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const FormCTA = () => {
     return (
-        <div className="bg-glass position-relative padding-25em">
+        <div className="bg-glass position-relative padding-25em ">
             <Image className="left-0 position-absolute top-0" fill src="/images/border-form-cta.svg" alt="Borda Gradiente Superior" />
 
             <h1 className="d-flex flex-column cta-title">
