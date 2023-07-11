@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar"
+import Portfolio from "@/components/Portfolio"
 import Top from "@/components/Top"
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
         <Navbar />
         <Top />
       </div>
+      <Portfolio />
     </main>
   )
 }

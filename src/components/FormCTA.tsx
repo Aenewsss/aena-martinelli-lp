@@ -1,5 +1,7 @@
-import { robotoSlab } from "@/app/layout";
+import { Roboto_Slab } from 'next/font/google'
 import Image from "next/image";
+
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
 const FormCTA = () => {
     return (

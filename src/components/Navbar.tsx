@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const Navbar = () => {
     return (
-        <div className="container d-flex align-center justify-between navbar gap-2">
+        <div className="container d-flex flex-wrap align-center justify-between navbar gap-2">
             <img src="/images/logo-aena.svg" alt="Aenã Martinelli logo" />
 
             <div className="d-flex gap-1 justify-center">
                 <a href="#" className="text-green fs-24 nav-link nav-important">Quero saber mais!</a>
                 <input id="expand" type="checkbox" hidden />
-                <ul className="d-flex gap-1 justify-center nav-list">
+                <ul className="d-flex flex-wrap gap-1 justify-center nav-list">
                     <li><a href="#" className="nav-link">Projetos</a></li>
                     <li><a href="#" className="nav-link">Sobre mim</a></li>
                     <li><a href="#" className="nav-link">Feedbacks</a></li>

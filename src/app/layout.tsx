@@ -1,7 +1,7 @@
 import './globals.css'
 import { Roboto_Slab } from 'next/font/google'
 
-export const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
+const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Sites de Alta Perfomance!',

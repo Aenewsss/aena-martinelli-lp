@@ -4,7 +4,8 @@
   --green: #4CD5B6;
   --mw-1360: 1360px;
   --mw-992: 992px;
-  --bg-navbar: rgba(0, 0, 0, 0.2)
+  --bg-navbar: rgba(0, 0, 0, 0.2);
+  --bg-card: #232323;
 }
 
 * {
@@ -131,6 +132,9 @@ button {
   max-width: var(--mw-1360);
 }
 
+.p-4 {
+  padding: 4vw;
+}
 
 .nav-link {
   align-self: center;
@@ -148,7 +152,6 @@ button {
 
 .d-flex {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .gap-1 {
@@ -233,9 +236,6 @@ button {
   max-width: 40%;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
 
 .left-0 {
   left: 0 !important;
@@ -255,6 +255,10 @@ button {
   width: 100%;
 }
 
+.w-50 {
+  width: 49%;
+}
+
 .mt-5 {
   margin-top: 5em;
 }
@@ -269,12 +273,64 @@ button {
   height: 30px;
 }
 
+h2 {
+  position: relative;
+  font-size: clamp(20px, 4vw, 48px);
+}
+
+h2::after {
+  position: absolute;
+  content: '';
+  width: clamp(100px, 15vw, 190px);
+  height: 3px;
+  background: #4CD5B6;
+  left: 0;
+  bottom: -10px;
+}
+
+.portfolio-card {
+  background-color: var(--bg-card);
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.portfolio-card> :is(h3, p) {
+  padding: 0 20px;
+}
+
+.btn-cta {
+  color: var(--green);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: clamp(20px, 4vw, 24px);
+  border-radius: 4.144px;
+  border: 2.762px solid #4CD5B6;
+  box-shadow: 2.7623860836029053px 5.5247721672058105px 13.811929702758789px 0px #4CD5B6;
+  cursor: pointer;
+  padding: clamp(12px, 4vw, 26px) clamp(10px, 4vw, 36px);
+  max-width: 442px;
+  ;
+}
+
+.mt-2{ margin-top: 2em;}
+.mt-3{ margin-top: 3em;}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
+
+@media screen and (min-width: 1360px) {
+  .p-4 {
+    padding: unset;
+  }
+}
+
 
 @media screen and (max-width: 1360px) {
   .navbar {
@@ -301,6 +357,18 @@ button {
   .mt-md-5 {
     margin-top: 5em !important;
   }
+
+  .mt-md-0 {
+    margin-top: unset;
+  }
+
+  .mb-md-2{
+    margin-bottom: 2em;
+  }
+
+  .flex-md-row{
+    flex-direction: row;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -311,6 +379,10 @@ button {
     padding: 1.2em 0.6em;
     border-end-start-radius: 40px;
     border-end-end-radius: 40px;
+  }
+
+  .w-50 {
+    width: unset;
   }
 }
 
@@ -370,14 +442,14 @@ button {
     font-size: 24px !important;
   }
 
-  .nav-link{
+  .nav-link {
     font-size: 16px !important;
   }
 
   .expand-button {
     display: unset;
   }
-  
+
 }
 
 @media screen and (max-width: 428px) {
