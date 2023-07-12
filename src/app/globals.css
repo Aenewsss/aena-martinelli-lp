@@ -437,6 +437,7 @@ h2::after {
 @media screen and (max-width: 992px) {
   .fs-38{
     font-size: 1.4em;
+    text-align: center;
   }
   
   .navbar {
