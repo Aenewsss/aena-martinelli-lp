@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
     return (
-        <section className="container mt-md-5 p-4">
+        <section id="about" className="container mt-md-5 p-4">
             <div className="card-about p-4 p-md-4">
                 <h2>O profissional por trás dos serviços</h2>
 

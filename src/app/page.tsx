@@ -1,5 +1,7 @@
 import About from "@/components/About"
+import Contact from "@/components/Contact"
 import Feedbacks from "@/components/Feedbacks"
+import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 import Portfolio from "@/components/Portfolio"
 import Top from "@/components/Top"
@@ -16,6 +18,8 @@ export default function Home() {
       <About />
       <Feedbacks />
       <Youtube />
+      <Contact />
+      <Footer />
     </main>
   )
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Portfolio = () => {
     return (
-        <section className="container d-flex flex-md-row flex-column mt-md-5 p-4 justify-between">
+        <section id="portfolio" className="container d-flex flex-md-row flex-column mt-md-5 p-4 justify-between">
             <div className="d-flex flex-column w-50 gap-2">
                 <h2>Conheça meus projetos de sucesso</h2>
 

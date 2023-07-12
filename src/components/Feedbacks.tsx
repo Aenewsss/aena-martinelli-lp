@@ -1,8 +1,7 @@
 const Feedbacks = () => {
     return (
-        <section className="container mt-md-5 p-4">
+        <section id="feedbacks" className="container mt-md-5 p-4">
             <h2 className="text-center after-center">O que os clientes dizem sobre meus serviços</h2>
-
         </section>
     );
 }
