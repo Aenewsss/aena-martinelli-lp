@@ -268,7 +268,7 @@ button {
   display: none;
 }
 
-#expand:checked~.nav-list {
+#expand:checked~.nav-list.nav-mobile {
   margin-top: unset;
   height: 30px;
 }
@@ -312,11 +312,28 @@ h2::after {
   ;
 }
 
-.mt-2{ margin-top: 2em;}
-.mt-3{ margin-top: 3em;}
+.mt-2 {
+  margin-top: 2em;
+}
 
-.flex-wrap{
+.mt-3 {
+  margin-top: 3em;
+}
+
+.flex-wrap {
   flex-wrap: wrap;
+}
+
+.desktop {
+  display: inherit;
+}
+
+.nav-mobile {
+  visibility: hidden;
+}
+
+.nav-scroll {
+  background-color: black !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -330,7 +347,6 @@ h2::after {
     padding: unset;
   }
 }
-
 
 @media screen and (max-width: 1360px) {
   .navbar {
@@ -347,7 +363,7 @@ h2::after {
     justify-content: center !important;
   }
 
-  .navbar > div {
+  .navbar>div {
     justify-content: center !important;
   }
 
@@ -362,17 +378,18 @@ h2::after {
     margin-top: unset;
   }
 
-  .mb-md-2{
+  .mb-md-2 {
     margin-bottom: 2em;
   }
 
-  .flex-md-row{
+  .flex-md-row {
     flex-direction: row;
   }
 }
 
 @media screen and (max-width: 992px) {
   .navbar {
+
     background-color: var(--bg-navbar);
     margin-right: unset;
     margin-top: unset;
@@ -415,9 +432,18 @@ h2::after {
 }
 
 @media screen and (max-width: 904px) {
+
+  .top-section{
+    margin-top: 12em;
+  }
+  
   .navbar {
     padding-bottom: unset;
     gap: unset !important;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
   }
 
   .navbar>img {
@@ -430,7 +456,6 @@ h2::after {
   }
 
   .nav-list {
-    margin-top: -1.5em;
     height: 0;
     overflow: hidden;
     transition: all .4s ease-in;
@@ -438,6 +463,12 @@ h2::after {
 
   .nav-link.nav-important {
     font-size: 24px !important;
+    text-align: center;
+    border-radius: 4.144px;
+    box-shadow: 2.7623860836029053px 5.5247721672058105px 13.811929702758789px 0px #4CD5B6;
+    color: var(--white);
+    background-color: var(--green);
+    padding: 4px;
   }
 
   .nav-link {
@@ -448,11 +479,31 @@ h2::after {
     display: unset;
   }
 
+  .nav-mobile {
+    visibility: unset;
+  }
+
+  .desktop {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 428px) {
-  #expand:checked~.nav-list {
+  #expand:checked~.nav-list.nav-mobile {
     height: 70px;
+  }
+
+  .navbar>div>img {
+    max-width: 35%;
+  }
+
+  .nav-link.nav-important {
+    font-size: 16px !important;
+  }
+
+  .top-section{
+    margin-top: 8em;
   }
 }
 
