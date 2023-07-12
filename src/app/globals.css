@@ -88,9 +88,14 @@ input:focus-visible {
 }
 
 button {
+  text-transform: uppercase;
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.mw-100 {
+  max-width: 100% !important;
 }
 
 .form-cta {
@@ -162,8 +167,22 @@ button {
   gap: 2em;
 }
 
+.text-center {
+  text-align: center;
+}
+.after-center::after{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .align-center {
   align-items: center;
+}
+
+.bg-black {background-color: black;}
+
+.fs-38{
+  font-size: 38px;
 }
 
 .text-green {
@@ -172,6 +191,18 @@ button {
 
 .fs-24 {
   font-size: 24px !important;
+}
+
+.gap-3{
+  gap: 3em;
+}
+
+.fs-20{
+  font-size: 20px !important;
+}
+
+.p-08{
+  padding: .8em !important;
 }
 
 .justify-between {
@@ -273,6 +304,10 @@ button {
   height: 30px;
 }
 
+.navbar:has(#expand:checked) {
+  background-color: black !important;
+}
+
 h2 {
   position: relative;
   font-size: clamp(20px, 4vw, 48px);
@@ -336,6 +371,14 @@ h2::after {
   background-color: black !important;
 }
 
+.card-about {
+  box-shadow: 0px 4px 79px 41px rgba(0, 0, 0, 0.25);
+}
+
+.card-about > div > img {
+  max-width: 600px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -345,6 +388,10 @@ h2::after {
 @media screen and (min-width: 1360px) {
   .p-4 {
     padding: unset;
+  }
+
+  .p-md-4{
+    padding: 4vw;
   }
 }
 
@@ -388,6 +435,10 @@ h2::after {
 }
 
 @media screen and (max-width: 992px) {
+  .fs-38{
+    font-size: 1.4em;
+  }
+  
   .navbar {
 
     background-color: var(--bg-navbar);
@@ -433,10 +484,10 @@ h2::after {
 
 @media screen and (max-width: 904px) {
 
-  .top-section{
+  .top-section {
     margin-top: 12em;
   }
-  
+
   .navbar {
     padding-bottom: unset;
     gap: unset !important;
@@ -502,7 +553,7 @@ h2::after {
     font-size: 16px !important;
   }
 
-  .top-section{
+  .top-section {
     margin-top: 8em;
   }
 }
