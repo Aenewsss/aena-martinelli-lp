@@ -11,7 +11,9 @@ const Navbar = () => {
       const handleScroll = () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         const shouldAddClass = scrollTop > 0; // Defina a condição para adicionar a classe conforme necessário
-        setIsScrolled(shouldAddClass);
+        if(window.innerWidth < 992){
+            setIsScrolled(shouldAddClass);
+        }
       };
   
       window.addEventListener("scroll", handleScroll);

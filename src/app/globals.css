@@ -383,7 +383,8 @@ h2::after {
   max-width: 600px;
 }
 
-.form-contact input, textarea {
+.form-contact input,
+textarea {
   border: 2px solid #FFF;
   border-radius: 10.111px;
   width: 100% !important;
@@ -396,14 +397,27 @@ textarea {
   font-size: clamp(14px, 6vw, 24px);
 }
 
-.align-start{
+.align-start {
   align-items: start !important;
 }
 
-.w-fit{width: fit-content !important;}
+.w-fit {
+  width: fit-content !important;
+}
 
 .self-unset {
   align-self: unset;
+}
+
+.w-69 {
+  width: 69% !important;
+}
+
+.youtube-cta {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -480,6 +494,17 @@ textarea {
   .w-50 {
     width: unset;
   }
+
+  .w-69{
+    width: 100% !important;
+  }
+
+  .youtube-cta {
+    position: unset;
+    transform: none;
+    align-items: center;
+  }
+  
 }
 
 @media screen and (max-width:768px) {

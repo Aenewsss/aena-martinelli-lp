@@ -9,12 +9,12 @@ const Youtube = () => {
                 objetiva e totalmente gratuita!
             </h2>
 
-            <div className="d-flex mt-3 bg-black flex-md-row flex-column">
-                <Image quality={100} fill src="/images/youtube.png" alt="Canal Youtube Garoto de programa" />
+            <div className="d-flex mt-3 bg-black flex-md-row flex-column position-relative">
+                <Image className=" w-69" quality={100} fill src="/images/youtube.png" alt="Canal Youtube Garoto de programa" />
 
-                <div className="container p-4 d-flex flex-column w-50 justify-center gap-2">
-                    <p className="fs-38">Aprenda com quem tem
-                        experiência e se destaque
+                <div className="container p-4 d-flex flex-column w-50 justify-center gap-2 youtube-cta">
+                    <p className="fs-38">Aprenda com quem tem <br />
+                        experiência e se destaque <br />
                         no mercado</p>
 
                     <button className="btn-cta">IR PARA O YOUTUBE</button>
