@@ -348,7 +348,7 @@ h2::after {
   cursor: pointer;
   padding: clamp(12px, 4vw, 26px) clamp(10px, 4vw, 36px);
   max-width: 442px;
-  ;
+  transition: .4s ease-in;
 }
 
 .mt-2 {
@@ -418,6 +418,12 @@ textarea {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.btn-cta:hover {
+  scale: 1.02;
+  background-color: var(--green);
+  color: white;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -495,7 +501,7 @@ textarea {
     width: unset;
   }
 
-  .w-69{
+  .w-69 {
     width: 100% !important;
   }
 
@@ -504,7 +510,7 @@ textarea {
     transform: none;
     align-items: center;
   }
-  
+
 }
 
 @media screen and (max-width:768px) {
