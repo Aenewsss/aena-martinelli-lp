@@ -38,8 +38,8 @@ const FormCTA = () => {
         }
 
         emailjs.send(
-            process.env.NEXT_PUBLIC_SERVICE_ID,
-            process.env.NEXT_PUBLIC_TEMPLATE_ID,
+            String(process.env.NEXT_PUBLIC_SERVICE_ID),
+            String(process.env.NEXT_PUBLIC_TEMPLATE_ID),
             templateParams,
             process.env.NEXT_PUBLIC_USER_ID)
             .then((result: any) => {
