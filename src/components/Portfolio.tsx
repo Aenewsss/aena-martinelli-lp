@@ -25,7 +25,7 @@ const Portfolio = () => {
             </div>
             <div className="d-flex flex-column w-50 align-center gap-2 mt-md-0 mt-2">
                 <div className="portfolio-card d-flex flex-column gap-1 mt-md-0">
-                    <Image fill src="/portfolio/walkr.png" alt="Walkr App, aplicativo para descobrir o número da sua vida" />
+                    <Image fill src="/portfolio/walkr-app.png" alt="Walkr App, aplicativo para descobrir o número da sua vida" />
                     <h3>WALKR APP</h3>
                     <p>
                         Aplicativo para ajudar pessoas a descobrirem quanto custa a realização dos seus sonhos,
@@ -45,7 +45,7 @@ const Portfolio = () => {
                 <a target="_blank"
                     href="https://api.whatsapp.com/send?phone=5561992634979&text=Olá, Aenã. 
                     Eu gostaria de solicitar um orçamento"
-                    className="btn-cta mt-2 mt-md-0 ">
+                    className="btn-cta mt-2 mt-md-0 text-center fs-20">
                     SOLICITE SEU ORÇAMENTO
                 </a>
             </div>

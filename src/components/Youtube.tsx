@@ -17,7 +17,11 @@ const Youtube = () => {
                         experiência e se destaque <br />
                         no mercado</p>
 
-                    <button className="btn-cta">IR PARA O YOUTUBE</button>
+                    <button className="btn-cta">
+                        <a target="_blank" href="https://www.youtube.com/@garotodeprograma_">
+                            IR PARA O YOUTUBE
+                        </a>
+                    </button>
                 </div>
             </div>
 

@@ -5,6 +5,7 @@ import { IFormTopCta } from "@/interface/interfaces";
 import { Roboto_Slab } from 'next/font/google'
 import Image from "next/image";
 import { FormEvent, useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const robotoSlab = Roboto_Slab({ subsets: ['latin'] })
 
@@ -27,10 +28,27 @@ const FormCTA = () => {
         }
     }
 
-    function handleSubmit(event: FormEvent) {
+    async function handleSubmit(event: FormEvent) {
         event.preventDefault()
-        console.log(ctaData)
-        console.log(process.env.DB_HOST)
+
+        const templateParams = {
+            user_name: ctaData.name,
+            user_phone: ctaData.phone,
+            user_email: ctaData.email
+        }
+
+        emailjs.send(
+            process.env.NEXT_PUBLIC_SERVICE_ID,
+            process.env.NEXT_PUBLIC_TEMPLATE_ID,
+            templateParams,
+            process.env.NEXT_PUBLIC_USER_ID)
+            .then((result: any) => {
+                console.log(result.text);
+            }, (error: any) => {
+                console.log(error.text);
+            });
+
+        window.open("https://api.whatsapp.com/send?phone=5561992634979&text=Olá,%20Aenã.%20%20%20%20Eu%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20serviços%20referentes%20a%20criação%20de%20sites%20e%20aplicativos!", "_blank")
     }
 
     return (
@@ -43,7 +61,7 @@ const FormCTA = () => {
                 <span className="cta-title-3">com sites e aplicativos de alta performance!</span>
             </h1>
 
-            <form onSubmit={(e) => handleSubmit(e)} className="form-cta d-flex flex-column">
+            <form onSubmit={handleSubmit} className="form-cta d-flex flex-column">
                 <input value={ctaData.name} id="name" onChange={(e) => handleCtaData(e)} required style={robotoSlab.style} type="text" placeholder="Como posso te chamar?" />
                 <input value={ctaData.email} id="email" onChange={(e) => handleCtaData(e)} required style={robotoSlab.style} type="email" placeholder="Principal e-mail" />
                 <input value={ctaData.phone} id="phone" onChange={(e) => handleCtaData(e)} required style={robotoSlab.style} type="number" placeholder="Whatsapp" />

@@ -3,3 +3,10 @@ export interface IFormTopCta {
     email: string;
     phone: string;
 }
+
+export interface IFormBottomCta {
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
+}
