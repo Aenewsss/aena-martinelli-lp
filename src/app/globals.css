@@ -477,7 +477,7 @@ textarea {
   border-radius: 25px;
   background: rgba(29, 37, 41, 0.5);
   box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
-  padding: 2em 4em;
+  padding: 2vh 4vw;
   width: 80%;
   align-self: center;
 }
@@ -553,9 +553,6 @@ textarea {
   .fs-38 {
     font-size: 1.4em;
     text-align: center;
-  }
-
-  .card-feedback > div {
   }
 
   .navbar {
