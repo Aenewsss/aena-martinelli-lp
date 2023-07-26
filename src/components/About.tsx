@@ -9,7 +9,7 @@ const About = () => {
                 <div className="d-flex flex-column flex-md-row mt-3 justify-between">
                     <Image quality={80} fill src="/images/about.png" alt="Sobre Aenã Martinelli" />
 
-                    <div className="d-flex flex-column w-50 gap-3 justify-center">
+                    <div className="d-flex flex-column w-50 mt-md-0 mt-2 gap-3 justify-center">
                         <p>
                             Está na hora de <span className="text-green">elevar</span> o seu
                             <span className="text-green">&nbsp;negócio</span> a patamares <span className="text-green">extraordinários</span>!

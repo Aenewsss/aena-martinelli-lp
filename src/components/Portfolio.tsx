@@ -45,7 +45,7 @@ const Portfolio = () => {
                 <a target="_blank"
                     href="https://api.whatsapp.com/send?phone=5561992634979&text=Olá, Aenã. 
                     Eu gostaria de solicitar um orçamento"
-                    className="btn-cta mt-2 mt-md-0 text-center fs-20">
+                    className="btn-cta mt-md-0 text-center fs-20">
                     SOLICITE SEU ORÇAMENTO
                 </a>
             </div>

@@ -672,6 +672,13 @@ textarea {
     margin-top: 7em !important;
     margin-bottom: 5em !important;
   }
+  .carousel-btn.prev {
+    left: -10px;
+  }
+  
+  .carousel-btn.next {
+    right: -10px;
+  }
 }
 
 @media screen and (max-width: 428px) {
