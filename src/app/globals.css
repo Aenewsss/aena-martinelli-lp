@@ -271,6 +271,10 @@ button {
   max-width: 40%;
 }
 
+.feedback-image{
+  max-width: 100px;
+  max-height: 100px;
+}
 
 .left-0 {
   left: 0 !important;
