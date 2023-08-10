@@ -685,6 +685,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 452px){
+  .fs-24{
+    font-size: 20px !important;
+  }
+}
+
 @media screen and (max-width: 428px) {
   #expand:checked~.nav-list.nav-mobile {
     height: 70px;
